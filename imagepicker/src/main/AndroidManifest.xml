@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.imagepicker">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.front" />
+
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ui.GlobalApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="UnusedAttribute,GoogleAppIndexingWarning">
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d89b6aa2cb3d098ebd08e96bf4dc4847612b92fb" />
+
+        <activity android:name=".ui.PickerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.mediaList.MediaListActivity"
+            android:launchMode="singleTask">
+
+        </activity>
+        <activity
+            android:name=".ui.selectedMedia.SelectedMediaActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.mediaList.MediaListActivity"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:name=".ui.cropper.CropperActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.camera.CameraActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

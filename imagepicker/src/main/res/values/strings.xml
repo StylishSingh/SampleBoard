@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ImagePicker</string>
+    <string name="action_save">Save</string>
+    <string name="action_count">Count</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_crop">Crop</string>
+
+    <string name="folder_name_crop">Crop</string>
+
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+
+    <!-- Screen title name -->
+    <string name="title_crop_image">Crop Image</string>
+    <string name="title_crop">Crop</string>
+
+
+    <string name="desc_media_item">Media Item</string>
+    <string name="desc_selected">selected</string>
+</resources>

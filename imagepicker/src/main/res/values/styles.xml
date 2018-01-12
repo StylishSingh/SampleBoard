@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!-- Text view Styles-->
+    <style name="txtview_small_widget">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:paddingLeft">@dimen/margin_4</item>
+        <!--<item name="android:maxLines">1</item>-->
+    </style>
+
+    <style name="txtview_standard_widget">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:paddingLeft">@dimen/margin_4</item>
+        <!--<item name="android:maxLines">1</item>-->
+    </style>
+
+    <style name="txtview_info_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+</resources>
